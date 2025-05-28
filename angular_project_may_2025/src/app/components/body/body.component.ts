@@ -12,6 +12,7 @@ import { Math1Component } from '../math1/math1.component';
 import { Math2Component } from '../math2/math2.component';
 import { HttpDemo1Component } from '../http-demo1/http-demo1.component';
 import { HttpDemo2Component } from '../http-demo2/http-demo2.component';
+import { ObservableDemo1Component } from '../observable-demo1/observable-demo1.component';
 
 @Component({
   selector: 'app-body',
@@ -28,7 +29,8 @@ import { HttpDemo2Component } from '../http-demo2/http-demo2.component';
     // Math1Component,
     // Math2Component
     // HttpDemo1Component
-    HttpDemo2Component
+    // HttpDemo2Component
+    ObservableDemo1Component
   ],
   templateUrl: './body.component.html',
   styleUrl: './body.component.css',
