@@ -1,0 +1,19 @@
+<h3 class="text-center">Lets Understand effects</h3>
+
+<div class="border-5 p-2 m-2">
+  <div>userId: {{userId()}} </div>
+  <button class="btn btn-primary" (click)="incrementUserId()">incrementUserId</button>
+  <button class="btn btn-primary mx-2" (click)="destroyEffect()">destroyEffect</button>
+
+  <div class="card text-center">
+    <div class="card-body">
+      <h5 class="card-title">{{userData.userName}}</h5>
+      <p class="card-text">{{userData.email}}</p>
+      <p class="card-text">{{userData.phone}}</p>
+      <p class="card-text text-truncate">{{userData.address.city}}</p>
+
+      <a href="#" class="btn btn-primary">Details</a>
+    </div>
+  </div>
+
+</div>

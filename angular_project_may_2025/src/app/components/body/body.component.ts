@@ -20,6 +20,8 @@ import { Message2Component } from '../message2/message2.component';
 import { MessageAddComponent } from '../message-add/message-add.component';
 import { SubjectDemo1Component } from '../subject-demo1/subject-demo1.component';
 import { SignalDemo1Component } from '../signal-demo1/signal-demo1.component';
+import { SignalDemo2Component } from '../signal-demo2/signal-demo2.component';
+import { SignalDemo3Component } from '../signal-demo3/signal-demo3.component';
 
 @Component({
   selector: 'app-body',
@@ -44,7 +46,9 @@ import { SignalDemo1Component } from '../signal-demo1/signal-demo1.component';
     // Message2Component,
     // MessageAddComponent
     // SubjectDemo1Component
-    SignalDemo1Component
+    // SignalDemo1Component,
+    // SignalDemo2Component
+    SignalDemo3Component
   ],
   templateUrl: './body.component.html',
   styleUrl: './body.component.css',
