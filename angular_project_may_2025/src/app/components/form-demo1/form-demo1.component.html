@@ -1,0 +1,31 @@
+<h3 class="text-center">Let's learn Form Related Class Names</h3>
+
+<pre>
+  Classes:
+  -------
+  ng-pristine : No user interaction occured/not yet modified
+  ng-dirty : User interaction occured/modified
+
+  ng-invalid : One of the Validation is not meeting
+  ng-valid : It meets all the validation
+
+  ng-untouched: not yet touched
+  ng-touched: already touched (blur)
+</pre>
+
+<form name='myForm'>
+  Name:
+  <input name='uname' [(ngModel)]='name' required /><br><br>
+  Age:
+  <input name='uage' [(ngModel)]='age' />
+</form>
+
+<style>
+  input.ng-invalid {
+    border: 5px solid red;
+  }
+
+  input.ng-valid {
+    border: 5px solid green;
+  }
+</style>

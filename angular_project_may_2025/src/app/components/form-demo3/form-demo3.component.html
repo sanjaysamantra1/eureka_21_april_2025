@@ -1,0 +1,33 @@
+<h3 class="text-center">Let's Learn Model Driven Form</h3>
+
+<div class="col-sm-4 offset-4 border border-5 rounded-2 p-3">
+  <form [formGroup]="userForm" (submit)="submitUserForm()">
+    <p>
+      Name:<input name="name" formControlName="name" />
+
+      <span class="text-danger" *ngIf="userForm.controls['name'].hasError('required')">Name is Required</span>
+      <span class="text-danger" *ngIf="userForm.controls['name'].hasError('minlength')">Name Should have minimu 5
+        characters</span>
+    </p>
+    <p> Email:<input name="email" formControlName="email" /></p>
+    <p>
+      Gender:
+      <input type="radio" name="gender" id="male" value="male" formControlName="gender"> Male
+      <input type="radio" name="gender" id="female" value="female" formControlName="gender"> Female
+    </p>
+    <div formGroupName="address">
+      <p>Street:<input name="street" formControlName="street" /></p>
+      <p>City:<input name="city" formControlName="city" /></p>
+      <p>Pincode:<input name="pincode" formControlName="pincode" /></p>
+    </div>
+    <input type="reset" value="Reset" class="btn btn-danger mx-2">
+    <input type="submit" value="Submit" [disabled]="userForm.invalid" class="btn btn-success">
+  </form>
+
+  <div class="mt-5">
+    Form Data:
+    <pre>
+      {{userForm.value | json}}
+    </pre>
+  </div>
+</div>
