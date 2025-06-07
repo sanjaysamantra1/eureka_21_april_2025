@@ -25,6 +25,7 @@ import { SignalDemo3Component } from '../signal-demo3/signal-demo3.component';
 import { FormDemo1Component } from '../form-demo1/form-demo1.component';
 import { FormDemo2Component } from '../form-demo2/form-demo2.component';
 import { FormDemo3Component } from '../form-demo3/form-demo3.component';
+import { RouterOutlet } from '@angular/router';
 
 @Component({
   selector: 'app-body',
@@ -54,7 +55,8 @@ import { FormDemo3Component } from '../form-demo3/form-demo3.component';
     // SignalDemo3Component
     // FormDemo1Component
     // FormDemo2Component
-    FormDemo3Component
+    // FormDemo3Component
+    RouterOutlet
   ],
   templateUrl: './body.component.html',
   styleUrl: './body.component.css',
