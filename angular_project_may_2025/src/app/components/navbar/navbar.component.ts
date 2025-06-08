@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { RouterLink, RouterLinkActive } from '@angular/router';
+import { UserinfoService } from '../../services/userinfo.service';
 
 @Component({
   selector: 'app-navbar',
@@ -11,5 +12,10 @@ import { RouterLink, RouterLinkActive } from '@angular/router';
   styleUrl: './navbar.component.css'
 })
 export class NavbarComponent {
+  userRole: any;
+
+  constructor(private userinfoService: UserinfoService) {
+    this.userRole = this.userinfoService.userRole;
+  }
 
 }

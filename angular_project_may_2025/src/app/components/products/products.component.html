@@ -25,7 +25,8 @@
               {{product.rating.rate}}
               <fa-icon [icon]="faStar"></fa-icon>
             </p>
-            <a href="#" class="btn btn-primary">Details</a>
+            <a class="btn btn-primary" [routerLink]="['/productdetails']"
+            [queryParams]="{id:product.id,title:product.title,price:product.price}">Details</a>
           </div>
         </div>
       </div>
