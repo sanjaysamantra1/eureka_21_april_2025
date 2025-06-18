@@ -1,0 +1,11 @@
+<div class="text-center p-2 border border-3 rounded-3 m-2">
+  <h3>Counter Example using NgRx</h3>
+  <hr/>
+  <h2>Count value is : {{count$ | async}}</h2>
+
+  <div>
+    <button class="btn btn-secondary" (click)="decrementCount()">Decrement</button>
+    <button class="btn btn-danger mx-2" (click)="resetCount()">Reset</button>
+    <button class="btn btn-primary" (click)="incrementCount()">Increment</button>
+  </div>
+</div>
