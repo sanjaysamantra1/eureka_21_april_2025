@@ -1,0 +1,16 @@
+<h3 class="text-center">This is Todo CRUD Component using NGRX</h3>
+<div class="border p-2 text-center col-sm-4 offset-4">
+  <ol>
+    @for(todo of todos$|async;track $index){
+    <li class="my-2">
+      <span [ngStyle]="{ 'text-decoration': todo.isCompleted ? 'line-through' : 'none' }">{{todo.text}} &nbsp;
+        {{todo.isCompleted}}
+        &nbsp;</span>
+      <button class="btn btn-danger" (click)="deleteMyTodo(todo.id)">Delete</button>
+      <button class="btn btn-secondary mx-1" (click)="toggleMyTodo(todo.id)">Toggle</button>
+    </li>
+    }
+  </ol>
+
+  <button class="btn btn-danger mx-1" (click)="clearAllMyTodos()">Clear All</button>
+</div>

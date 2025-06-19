@@ -1,12 +1,18 @@
 import { Component } from '@angular/core';
 import { MaterialDemo1Component } from './components/material-demo1/material-demo1.component';
 import { CounterComponent } from './components/counter/counter.component';
+import { TodoCrudComponent } from './components/todo-crud/todo-crud.component';
+import { EmployeeListComponent } from './components/employee-list/employee-list.component';
+import { EmployeeAddComponent } from './components/employee-add/employee-add.component';
 
 @Component({
   selector: 'app-root',
   imports: [
-    MaterialDemo1Component,
-    CounterComponent
+    // MaterialDemo1Component,
+    // CounterComponent,
+    // TodoCrudComponent,
+    EmployeeListComponent,
+    EmployeeAddComponent
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
